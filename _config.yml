@@ -16,7 +16,7 @@ resume: false
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: http://noah978.github.io/new
+url: http://noah978.github.io/
 # your url: http://USERNAME.github.io
 
 permalink: /:categories/:year/:month/:day/:title/
