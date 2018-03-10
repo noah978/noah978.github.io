@@ -1,6 +1,6 @@
 # main text of home
 name: Noah Keck
-bio: An Independent Java Developer and Apple Fan
+bio: An Independent Java Developer and Computer Enthusiast
 
 # twitter summary info
 description: Independent Developer Blog
@@ -46,16 +46,16 @@ github: noah978
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
-# reddit: noah978
+reddit: noah978
 # medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-# email: noahkeck@mindspring.com
+email: noahkeck@mindspring.com
 
 authors:
     noah:
         name: Noah Keck
-        bio: Independent Java Developer and Apple Fan
+        bio: Independent Java Developer and Computer Enthusiast
         external-image: false
         picture: assets/images/noah_keck_silouette.jpg
         twitter: horn978
