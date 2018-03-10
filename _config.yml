@@ -13,8 +13,8 @@ picture: assets/images/noah_keck_silouette.jpg
 # If you want to include your resume, set to true
 # and specify source (external or local).
 resume: true
-resume-external: true
-resume-url http://google.com
+resume-external: false
+resume-url: http://google.com
 
 url: http://noah978.github.io/
 # your url: http://USERNAME.github.io
