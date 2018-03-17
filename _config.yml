@@ -14,7 +14,7 @@ picture: assets/images/noah_keck_silhouette.jpeg
 # and specify source (external or local).
 resume: true
 resume-external: false
-resume-url: 
+# resume-url: resume.md
 
 url: http://noah978.github.io/
 # your url: http://USERNAME.github.io
