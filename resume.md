@@ -1,7 +1,7 @@
 # Noah Keck
 ### _resume_
 
-I have many skills.
+I have many skills. :ramen:
 
 Some of them include:
 
