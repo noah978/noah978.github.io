@@ -1,6 +1,6 @@
 # main text of home
 name: Noah Keck
-bio: An Independent Java Developer and Computer Enthusiast
+bio: An Independent Software Developer and Computer Enthusiast
 
 # twitter summary info
 description: Independent Developer Blog
@@ -55,7 +55,7 @@ email: noahkeck@mindspring.com
 authors:
     noah:
         name: Noah Keck
-        bio: Independent Java Developer and Computer Enthusiast
+        bio: Independent Software Developer and Computer Enthusiast
         external-image: false
         picture: assets/images/noah_keck_silhouette.jpeg
         twitter: horn978
@@ -70,7 +70,7 @@ width: normal
 # paginate_path: "blog/:num/"
 
 # if you don't need projects, comment the *projects* configs below
-projects: false
+projects: true
 
 # if you don't need "about" or "blog", comment them out below
 about: true
