@@ -1,3 +1,12 @@
+---
+
+title: Resume
+layout: page
+date: 2018-03-19 15:06
+author: noah
+
+---
+
 # Noah Keck
 ### _resume_
 
