@@ -5,7 +5,7 @@ date: 2018-03-19 15:06
 author: noah
 ---
 
-# Noah Keck
+<h1 align="center">Noah Keck</h1>
 
 ## Work Experience
 . . .
