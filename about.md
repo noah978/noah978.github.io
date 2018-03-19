@@ -1,6 +1,7 @@
 ---
 title: About
 layout: page
+author: noah
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
