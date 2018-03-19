@@ -6,7 +6,7 @@ tag:
 - java 
 - sudoku
 image: link
-headerImage: true
+headerImage: false
 projects: true
 hidden: true # don't count this post in blog pagination
 description: "This a Sudoku Generator (and player) written in Java using the Greenfoot IDE."
