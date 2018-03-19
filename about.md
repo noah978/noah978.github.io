@@ -22,7 +22,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 * In-Depth Knowledge of Code Complilation
 * Responsive / Dynamic HTML
 * Collaborative Work on Github
-* Worked with Emulation
+* Worked with HLE and LLE Emulation
 
 ## Programming Languages
 * Java
