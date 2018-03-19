@@ -6,34 +6,25 @@ author: noah
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+Hi! My name is Noah Keck, and I enjoy building computers and writing programs.
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+I have been programming for around 5 years now. I first programmed in MIT's Scratch to learn what procedural thinking was. I have worked on several projects as an independent developer, including Minesweeper and a Sudoku Generator written in java. I built my first high-end PC in 2017 and thoroughly enjoyed the experience. Since then I have continued learning about the intricacies of Windows, Mac OS and Linux.
+
+On a more personal level, I am a 17-year-old junior at Lone Star High School, where I am taking several advanced Cmputer Science courses and have almost completed a 4-year engineering program. I have always enjoyed computers to the fullest extent in both their software and hardware. I also actively practice and play the French Horn in the band, enjoy playing video games (especially Nintendo!) and have sang in an outside-of-school choir since the age of 10.
 
 ## Skills
 * In-Depth Knowledge of Code Complilation
 * Responsive / Dynamic HTML
 * Collaborative Work on Github
+* Participated in Sprint-based Development
 * Worked with HLE and LLE Emulation
+* Used MSFT Visual Studio to create windows applications
+* Created and used Virtual Machines
 
 ## Programming Languages
 * Java
 * Python
 * HTML / CSS
 * C++
+* C#
 * Swift and Objective C
-
-## Projects
-* [Java Minesweeper](https://github.com/noah978/Java-Minsweeper)
-* [Java Sudoku Generator](https://github.com/noah978/Java-Sudoku-Generator)
-
