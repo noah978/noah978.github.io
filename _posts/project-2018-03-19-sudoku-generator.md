@@ -11,13 +11,11 @@ projects: true
 hidden: true # don't count this post in blog pagination
 description: "This a Sudoku Generator (and player) written in Java using the Greenfoot IDE."
 category: project
-author: johndoe
+author: noah
 externalLink: false
 ---
 
 ![Screenshot](https://raw.githubusercontent.com/noah978/Java-Sudoku-Generator/master/SudokuExample.PNG)
-
-Example of project - Indigo Minimalist Jekyll Template - [Demo](http://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles.
 
 ---
 
