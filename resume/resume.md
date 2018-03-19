@@ -1,7 +1,7 @@
 ---
 
 title: Resume
-layout: page
+layout: post
 date: 2018-03-19 15:06
 author: noah
 
