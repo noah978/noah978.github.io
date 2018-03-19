@@ -2,7 +2,9 @@
 title: "Java Sudoku Generator"
 layout: post
 date: 2018-03-19 11:37
-tag: java, sudoku
+tag: 
+- java 
+- sudoku
 image: https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png
 headerImage: true
 projects: true
