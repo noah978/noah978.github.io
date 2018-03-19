@@ -1,6 +1,7 @@
 ---
 title: About
 layout: page
+date: 2018-03-19 15:35
 author: noah
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
