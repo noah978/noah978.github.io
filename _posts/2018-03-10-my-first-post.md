@@ -2,7 +2,7 @@
 title: "My First Post"
 layout: post
 date: 2018-03-10 04:22
-headerImage: true
+headerImage: false
 tag:
 - learning
 category: blog
