@@ -15,7 +15,7 @@ author: noah
 externalLink: false
 ---
 
-![Screenshot](https://raw.githubusercontent.com/noah978/Java-Sudoku-Generator/master/SudokuExample.PNG)
+![Screenshot](https://raw.githubusercontent.com/noah978/Java-Minesweeper/master/MinesweeperDemo.PNG)
 
 ---
 
