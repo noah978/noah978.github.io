@@ -1,13 +1,13 @@
 ---
-title: ":ramen: Indigo, minimalist jekyll theme"
+title: "Java Sudoku Generator"
 layout: post
-date: 2016-01-23 22:10
-tag: jekyll
+date: 2018-03-19 11:37
+tag: java, sudoku
 image: https://koppl.in/indigo/assets/images/jekyll-logo-light-solid.png
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
-description: "This is a simple and minimalist template for Jekyll for those who likes to eat noodles."
+description: "This a Sudoku Generator (and player) written in Java using the Greenfoot IDE."
 category: project
 author: johndoe
 externalLink: false
