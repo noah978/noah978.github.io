@@ -49,5 +49,7 @@ Able to dismantle, construct, wire and solder computers and computer parts. Prog
 Created and programmed algorithms to complete complex calculations. Created complex algorithms and programs designed to solve mathematical problems and can determine big O runtimes for processes. Designed and programmed graphical RPG and puzzle games, often collaborating with other students using Github.
 
 **Languages:** Java, C#, C++, Objective C, Swift, Python
+
 **Applications:** MS Visual Studio, Eclipse, Xcode, Github
+
 **Operating Systems:** Windows, MacOS, Unix, Linux
