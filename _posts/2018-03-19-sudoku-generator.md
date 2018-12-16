@@ -19,17 +19,4 @@ externalLink: false
 
 ---
 
-What has inside?
-
-- Gulp
-- BrowserSync
-- Stylus
-- SVG
-- Travis
-- No JS
-- [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F)
-
----
-
-[Check it out](http://sergiokopplin.github.io/indigo/) here.
-If you need some help, just [tell me](http://github.com/sergiokopplin/indigo/issues).
+The program generates its own sudoku puzzles using a complex, recursive algorithm. So far the algorithm can generate puzzles with about 21 remaining clues or more. The GUI allows you to generate as puzzles over and over, whether or not you fully solved the last one. It allows you to create "possible numbers" to help with sudoku strategies. It will also turn a number red if there is a direct conflict with any of the other existing numbers.
