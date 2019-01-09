@@ -6,14 +6,10 @@ tag:
 - ios
 - siri
 - gba4ios
-image: link
 headerImage: false
-projects: true
-hidden: true # don't count this post in blog pagination
 description: "A Siri Shortcut that creates a home screen icon for a game in your GBA4iOS library."
 category: blog
 author: noah
-externalLink: false
 ---
 
 Siri Shortcuts were introduced with iOS 12 and is considered one of the most impressive improvements to Siri ever. Apple realized that meeting every possible need or request in Siri was nearly impossible. But if they gave users the ability to create any set of chained commands to fulfill their request, they could *vastly* improve Siri’s capabilities.
