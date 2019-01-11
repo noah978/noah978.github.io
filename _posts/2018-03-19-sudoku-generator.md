@@ -1,7 +1,7 @@
 ---
 title: "Java Sudoku Generator"
 layout: post
-date: 2018-03-19 11:37
+# date: 2018-03-19 11:37
 tag: 
 - java 
 - sudoku
