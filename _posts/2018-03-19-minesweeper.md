@@ -1,7 +1,7 @@
 ---
 title: "Java Minesweeper"
 layout: post
-date: 2018-03-19 12:50
+# date: 2018-03-19 12:50
 tag: 
 - java
 - minesweeper
