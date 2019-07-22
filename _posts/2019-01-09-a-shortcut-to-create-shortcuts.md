@@ -32,8 +32,8 @@ When you input the name of your game, the home screen shortcut creator then runs
 
 To use the shortcut you will need to add both of the following shortcuts to your Siri Shortcut library. This can be done by simply clicking the links on your device.
 
-[GBA4iOS Shortcuts](https://www.icloud.com/shortcuts/7bfa1214a1b44f608e549475af67a6cc)
+[GBA4iOS Shortcuts](https://www.icloud.com/shortcuts/eab5089ca3fd4faaa910b79eed6735f3)
 
-[Convert Text to URL](https://www.icloud.com/shortcuts/26dc3ef24a6c47f1ac8598365c84b352)
+[Convert Text to URL](https://www.icloud.com/shortcuts/63d051ede25c4d63b3dd31f9f4422039)
 
 Just click the “GBA4iOS Shortcuts” (which is now in your siri shortcuts library) and it will guide you along the process. I would recommend copying and pasting the name of your game to ensure that it is exact.
