@@ -40,6 +40,8 @@ To use the shortcut you will need to add both of the following shortcuts to your
 
 Just click the “GBA4iOS Shortcuts” (which is now in your siri shortcuts library) and it will guide you along the process. I would recommend copying and pasting the name of your game to ensure that it is exact.
 
+https://www.icloud.com/shortcuts/b5207b88f7464381aa4d487878496259
+
 ## Credits
 
 Thank you to Riley Testut for creating GBA4iOS and including URL Scheme support.
