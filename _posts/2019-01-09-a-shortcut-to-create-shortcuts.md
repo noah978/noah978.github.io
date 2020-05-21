@@ -2,7 +2,7 @@
 title: "A Shortcut to Create Shortcuts"
 layout: post
 date: 2019-01-09 11:27
-tag: 
+tag:
 - ios
 - siri
 - gba4ios
@@ -15,23 +15,23 @@ author: noah
 
 Siri Shortcuts were introduced with iOS 12 and is considered one of the most impressive improvements to Siri ever. Apple realized that meeting every possible need or request in Siri was nearly impossible. But if they gave users the ability to create any set of chained commands to fulfill their request, they could *vastly* improve Siri’s capabilities.
 
-Given the capabilities of the Siri Shortcuts app, I created a shortcut to help with my favorite emulators: GBA4iOS and the recently released Delta.
+Given the capabilities of the Siri Shortcuts app, I created a shortcut to help with my favorite emulators: [GBA4iOS](https://gba4iosapp.com) and the more recent and capable [Delta.](https://deltaemulator.com)
 
 ### Introducing,
 
-# Emulator Home Screen Shortcut Creator
+# My iOS Emulator Home Screen Shortcut Creator
 
 Using this shortcut, you can create a Home Screen Icon using any image you want, that when clicked will directly open into any game in your rom library. All you need to do is have an image and the exact name of your game (or in Delta's case, the deep link) as it appears in your library.
 
 ## How Does This Work?
 
-Back when GBA4iOS was being developed, the developer Riley Testut implemented a feature that allowed a URL scheme to open games in GBA4iOS. This same feature is also present in Delta. A URL scheme looks like the following: 
+Back when GBA4iOS was being developed, the developer Riley Testut implemented a feature that allowed a URL scheme to open games in GBA4iOS. This same feature is also present in Delta. A URL scheme looks like the following:
 
-```gba4ios://Pokemon%20Emerald```
+``gba4ios://Pokemon%20Emerald``
 
 ~ or ~
 
-```delta://game/989bcb79c779cv97```
+``delta://game/989bcb79c779cv97``
 
 In the case of GBA4iOS, when you input the name of your game, the home screen shortcut creator then runs another separate shortcut which will convert regular text into a URL compatible text. So anytime you use the shortcut it's actually the same as typing the URL scheme into safari!
 
