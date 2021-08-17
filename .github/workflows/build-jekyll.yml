@@ -7,22 +7,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  build_and_deploy:
+  build_jekyll:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
-      # Use GitHub Actions' cache to cache dependencies on servers
-      - uses: actions/cache@v2
+      # Use GitHub Jekyll Action to build to repository branch
+      - uses: helaili/jekyll-action@v2
         with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
-
-      # Use GitHub Deploy Action to build and deploy to Github
-      - uses: jeffreytse/jekyll-deploy-action@v0.2.1
-        with:
-          provider: 'github'
-          token: ${{ secrets.GH_TOKEN }} # It's your Personal Access Token(PAT)
-          branch: 'gh-pages'         # Default is gh-pages for github provider
+          token: ${{ secrets.GITHUB_TOKEN }}
