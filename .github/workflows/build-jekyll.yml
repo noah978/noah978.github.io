@@ -15,4 +15,4 @@ jobs:
       # Use GitHub Jekyll Action to build to repository branch
       - uses: helaili/jekyll-action@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
