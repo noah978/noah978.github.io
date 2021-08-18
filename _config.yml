@@ -33,6 +33,10 @@ disqus:
   shortname: noah978-github-io # enter this from your disqus account
   categories: [] # only show disqus for posts that have these categories
 
+graphcomment:
+  id: noah978-blog
+  categories: [blog, project]
+
 # if you don't have any of social below, comment the line
 #facebook: myfacebook
 twitter: horn978

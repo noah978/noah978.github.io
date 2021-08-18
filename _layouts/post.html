@@ -46,4 +46,6 @@ layout: page
 
 {% if site.disqus.categories contains page.category %}
     {% include disqus.html %}
+{% elsif site.graphcomment.categories contains page.category %}
+    {% include graphcomment.html %}
 {% endif %}
