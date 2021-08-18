@@ -1,14 +1,13 @@
 ---
 title: "Java Sudoku Generator"
 layout: post
-# date: 2018-03-19 11:37
-tag: 
-- java 
+date: 2018-03-19 11:37
+tag:
+- java
 - sudoku
 image: link
 headerImage: false
 projects: true
-hidden: true # don't count this post in blog pagination
 description: "This a Sudoku Generator (and player) written in Java using the Greenfoot IDE."
 category: project
 author: noah
