@@ -95,7 +95,7 @@ GEM
       nokogiri (>= 1.10.4, < 2.0)
       rouge (= 3.26.0)
       terminal-table (~> 1.4)
-    github-pages-health-check (1.17.2)
+    github-pages-health-check (1.17.7)
       addressable (~> 2.3)
       dnsruby (~> 1.60)
       octokit (~> 4.0)
