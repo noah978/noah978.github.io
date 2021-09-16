@@ -42,11 +42,12 @@ Aspiring Computer Engineer with hands-on experience. Interested in software deve
 
 **CIO of Building the Bridges Community Services**
 
-As the founding CIO of the organization I set up the internal IT infrastructure and was the sole developer of the website, [btbcs.org](https://btbcs.org). Through this process I worked heavily with a variety of common web technologies:
+As the founding CIO of the organization, I set up the internal IT infrastructure and was the sole developer of the website, [btbcs.org](https://btbcs.org). Through this process I worked heavily with a variety of common web technologies:
 
 * Google Workspace
 * Docker
 * PHP, HTML, JS, CSS
+* Ruby
 
 **Student Programmer at Albion College**
 
@@ -54,41 +55,31 @@ Developed a variety of applications and automation tools using Python and SQL fo
 
 ## Technical Experience
 
-My Cool Side Project
+<!--My Cool Side Project
 :   For items which don't have a clear time ordering, a definition
     list can be used to have named items.
 
     * These items can also contain lists, but you need to mind the
       indentation levels in the markdown source.
     * Second item.
+-->
 
 Open Source
-:   List open source contributions here, perhaps placing emphasis on
-    the project names, for example the **Linux Kernel**, where you
-    implemented multithreading over a long weekend, or **node.js**
-    (with [link](http://nodejs.org)) which was actually totally
-    your idea...
+:   I've worked closely with the [AltStore project], a project that aims to provide an alternative App Store solution on iOS. I have been focusing primarily on marketing, long term project outlooks, and API design. I also did similar work with [Delta], which is a multi-emulator frontend for iOS devices.
 
 Programming Languages
-:   **Java:** Here, we have an itemization, where we only want
-    to add descriptions to the first few items, but still want to
-    mention some others together at the end. A format that works well
-    here is a description list where the first few items have their
-    first word emphasized, and the last item contains the final few
-    emphasized terms. Notice the reasonably nice page break in the pdf
-    version, which wouldn't happen if we generated the pdf via html.
+:   **Java:** Various independent projects, including Minesweeper and a Sudoku Puzzle Generator, with both the algorithm and GUI to play. Received a perfect score on the Computer Science AP Exam covering exclusively Java.
 
-:   **Python:** Description of your experience with second-lang,
-    perhaps again including a [link] [ref], this time placing the url
-    reference elsewhere in the document to reduce clutter (see source
-    file).
+:   **Python:** Worked on IT database automations, online web API usage, and general server scripting projects. Created a Slate to Banner database transfer and conversion automation.
 
-:   **obscure-but-impressive-lang:** We both know this one's pushing
-    it.
+:   **HTML / CSS / JS:** Designed complete website using common web technologies and Bootstrap v4. Wrote client-side JS that made dynamic website interactions using jQuery, AJAX, and more.
 
-:   Basic knowledge of **C**, **x86 assembly**, **forth**, **Common Lisp**
+:   **SQL*Plus:** Large-scale IT database management and general usage. Wrote various SQL queries on a large database to collect requested data.
 
-[ref]: https://github.com/githubuser/superlongprojectname
+:   Basic knowledge of **PHP**, **C/C++**, **MIPS assembly**, **C#**, **Swift**, **Ruby**
+
+[AltStore project]: https://github.com/rileytestut/AltStore "AltStore"
+[Delta]: https://github.com/rileytestut/Delta "Delta"
 
 ## Awards and Honors
 
