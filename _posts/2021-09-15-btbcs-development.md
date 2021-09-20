@@ -10,7 +10,7 @@ tag:
 - btbcs
 headerImage: false
 description: "The website for Building the Bridges Community Services, built from the ground up."
-category: project
+category: blog
 author: noah
 ---
 

@@ -7,7 +7,6 @@ tag:
 - sudoku
 image: link
 headerImage: false
-projects: true
 description: "This a Sudoku Generator (and player) written in Java using the Greenfoot IDE."
 category: project
 author: noah

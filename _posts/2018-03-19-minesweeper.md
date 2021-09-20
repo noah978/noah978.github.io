@@ -7,7 +7,6 @@ tag:
 - minesweeper
 image: link
 headerImage: false
-projects: true
 description: "This is a Minesweeper written in Java using the Greenfoot IDE."
 category: project
 author: noah
