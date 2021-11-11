@@ -28,6 +28,13 @@ $spaceamounts: (0, 1, 2, 3, 4, 5); // Adjust this to include the pixel amounts y
 $sides: (top, bottom, left, right); // Leave this variable alone
 
 @each $space in $spaceamounts {
+  .m-#{$space} {
+    margin-top: #{$space}rem !important;
+    margin-bottom: #{$space}rem !important;
+    margin-left: #{$space}rem !important;
+    margin-right: #{$space}rem !important;
+  }
+  
   .my-#{$space} {
     margin-top: #{$space}rem !important;
     margin-bottom: #{$space}rem !important;
@@ -36,6 +43,13 @@ $sides: (top, bottom, left, right); // Leave this variable alone
   .mx-#{$space} {
     margin-left: #{$space}rem !important;
     margin-right: #{$space}rem !important;
+  }
+
+  .p-#{$space} {
+    padding-top: #{$space}rem !important;
+    padding-bottom: #{$space}rem !important;
+    padding-left: #{$space}rem !important;
+    padding-right: #{$space}rem !important;
   }
 
   .py-#{$space} {

@@ -1,18 +1,19 @@
 ---
 title: Resume
-layout: page
+layout: pdf
 date: 2021-05-20 23:58
 author: noah
 ---
+
 {:refdef: style="color:gray; font-size: 80%;" .my-0 .text-center}
 
 # Noah T. Keck
-{: .mb-0 :}
+{: .mb-0 .text-center :}
 
 noahkeck@mindspring.com
 {:refdef}
 
-[https://noah978.github.io](https://noah978.github.io)
+[https://noahkeck.dev](https://noahkeck.dev)
 {:refdef}
 
 ## Objective
@@ -22,9 +23,9 @@ Aspiring Computer Engineer with hands-on experience. Interested in software deve
 ## Education
 
 
-2019-2022 (Expected)
+2019-2022 (Expected May)
 
-:   **BA, Computer Science**; Albion College (Albion, MI); GPA 3.7
+:   **BA, Computer Science**; Albion College (Albion, MI); GPA 3.72
 
     *Minor: Mathematics (Applied)*
 
@@ -42,7 +43,7 @@ Aspiring Computer Engineer with hands-on experience. Interested in software deve
 
 **CIO of Building the Bridges Community Services**
 
-As the founding CIO of the organization, I set up the internal IT infrastructure and was the sole developer of the website, [btbcs.org](https://btbcs.org). Through this process I worked heavily with a variety of common web technologies:
+As the founding CIO of the organization, set up the internal IT infrastructure and solely developed their website, [https://btbcs.org](https://btbcs.org). Worked heavily with a variety of common web technologies throughout this process, some of which include:
 
 * Google Workspace
 * Docker
@@ -51,7 +52,7 @@ As the founding CIO of the organization, I set up the internal IT infrastructure
 
 **Student Programmer at Albion College**
 
-Developed a variety of applications and automation tools using Python and SQL for use of the Albion College IT Department.
+Developed a variety of applications and automation tools using Python and SQL for use of the Albion College IT Department. Project lead of a Slate to Banner database transfer automation.
 
 ## Technical Experience
 
@@ -65,7 +66,7 @@ Developed a variety of applications and automation tools using Python and SQL fo
 -->
 
 Open Source
-:   I've worked closely with the [AltStore project], a project that aims to provide an alternative App Store solution on iOS. I have been focusing primarily on marketing, long term project outlooks, and API design. I also did similar work with [Delta], which is a multi-emulator frontend for iOS devices.
+:   Worked closely with the [AltStore project], a project that aims to provide an alternative App Store solution on iOS. The work was focusing primarily on marketing, long term project outlooks, and API design. Additionally, did related work with [Delta], which is a multi-emulator frontend for iOS devices distributed through AltStore.
 
 Programming Languages
 :   **Java:** Various independent projects, including Minesweeper and a Sudoku Puzzle Generator, with both the algorithm and GUI to play. Received a perfect score on the Computer Science AP Exam covering exclusively Java.
@@ -81,8 +82,14 @@ Programming Languages
 [AltStore project]: https://github.com/rileytestut/AltStore "AltStore"
 [Delta]: https://github.com/rileytestut/Delta "Delta"
 
+## Research and Development
+
+Albion College Prentiss M. Brown Honors Thesis (Completion April 2022)
+:   **The Automated Generation and Solvability of 3-Dimensional Sudoku Puzzles**
+
+
 ## Awards and Honors
 
-* Eagle Scout Rank - April 2019:
-* Presidential Scholarship, Albion College - February 2019
-* Perfect Score on Computer Science AP Exam - May 2018
+* Eagle Scout Rank — April 2019
+* Presidential Scholarship, Albion College — February 2019
+* Perfect Score on Computer Science AP Exam — May 2018
