@@ -17,7 +17,7 @@ resume-external: false
 resume-url: resume
 
 # If using external url, specify here
-url: https://noahkeck.dev
+url: http://noah978.github.io
 # your url: http://USERNAME.github.io
 
 permalink: /:categories/:year/:month/:day/:title/
