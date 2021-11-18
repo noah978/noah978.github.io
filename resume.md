@@ -18,10 +18,9 @@ noahkeck@mindspring.com
 
 ## Objective
 
-Aspiring Computer Engineer with hands-on experience. Interested in software development, modern innovations and programming for quantum computers.
+Aspiring Computer Scientist with hands-on experience. Interested in software development, autonomous vehicles, robotics programming, and applications of quantum computers.
 
 ## Education
-
 
 2019-2022 (Expected May)
 
@@ -36,8 +35,6 @@ Aspiring Computer Engineer with hands-on experience. Interested in software deve
 :   **High School Diploma**; Lone Star High School (Frisco, TX)
 
     STEM Endorsement; GPA 5.247; Rank 18/527
-
-
 
 ## Experience
 
@@ -87,9 +84,29 @@ Programming Languages
 Albion College Prentiss M. Brown Honors Thesis (Completion April 2022)
 :   **The Automated Generation and Solvability of 3-Dimensional Sudoku Puzzles**
 
+## Leadership and Extracurricular
+
+Albion College Pep Band
+* Vice-president — 2020-2021
+* President — 2021-2022
+
+Phi Mu Alpha Sinfonia
+* Treasurer — 2020-2022
+* Secretary — 2021-2022
+
+Kappa Kappa Psi Honorary Band Fraternity
+* Treasurer — 2021-2022
+
+British Eighth Marching Band — 2019-2021
+
+Albion College Symphonic Wind Ensemble — 2020-2022
+
+Pi Rho Alpha Pre-Engineering Fraternity
+* Secretary — 2021
 
 ## Awards and Honors
 
+* Dean's List — All Semesters 2019-2021
 * Eagle Scout Rank — April 2019
 * Presidential Scholarship, Albion College — February 2019
 * Perfect Score on Computer Science AP Exam — May 2018
