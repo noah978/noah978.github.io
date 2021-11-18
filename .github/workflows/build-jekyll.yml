@@ -11,7 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
+      # Create custom domain CNAME
+      - run: |
+          echo noahkeck.dev  > CNAME
       # Use GitHub Jekyll Action to build to repository branch
       - uses: helaili/jekyll-action@v2
         with:
