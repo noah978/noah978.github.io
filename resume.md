@@ -18,27 +18,27 @@ noahkeck@mindspring.com
 
 ## Objective
 
-Aspiring Computer Scientist with hands-on experience. Interested in software development, autonomous vehicles, robotics programming, and applications of quantum computers.
+Aspiring Computer Scientist with hands-on experience. Interested in software development, autonomous vehicles, machine learning, and applications of quantum computers.
 
 ## Education
 
-2019-2022 (Expected May)
+August 2019 — May 2022
 
-:   **BA, Computer Science**; Albion College (Albion, MI); GPA 3.72
+:   **BA, Computer Science**; Albion College (Albion, MI); GPA 3.78; Department GPA 3.88
 
     *Minor: Mathematics (Applied)*
 
     *Prentiss M. Brown Honors Program*
 
-2015-2019
+August 2015 — June 2019
 
 :   **High School Diploma**; Lone Star High School (Frisco, TX)
 
-    STEM Endorsement; GPA 5.247; Rank 18/527
+    STEM Endorsement; GPA 5.247; Rank 26/527
 
 ## Experience
 
-**CIO of Building the Bridges Community Services**
+**CIO of Building the Bridges Community Services** ◆ June 2021 — Present
 
 As the founding CIO of the organization, set up the internal IT infrastructure and solely developed their website, [https://btbcs.org](https://btbcs.org). Worked heavily with a variety of common web technologies throughout this process, some of which include:
 
@@ -47,7 +47,7 @@ As the founding CIO of the organization, set up the internal IT infrastructure a
 * PHP, HTML, JS, CSS
 * Ruby
 
-**Student Programmer at Albion College**
+**Student Programmer at Albion College** ◆ September 2019 — April 2022
 
 Developed a variety of applications and automation tools using Python and SQL for use of the Albion College IT Department. Project lead of a Slate to Banner database transfer automation.
 
@@ -81,8 +81,8 @@ Programming Languages
 
 ## Research and Development
 
-Albion College Prentiss M. Brown Honors Thesis (Completion April 2022)
-:   **The Automated Generation and Solvability of 3-Dimensional Sudoku Puzzles**
+Albion College Prentiss M. Brown Honors Thesis — April 2022
+:   **Algorithmic Solving and Generation of Three-Dimensional Sudoku Puzzles**
 
 ## Leadership and Extracurricular
 
@@ -106,7 +106,10 @@ Pi Rho Alpha Pre-Engineering Fraternity
 
 ## Awards and Honors
 
-* Dean's List — All Semesters 2019-2021
+* Ronald C. Fryxell Prize in Computer Science — April 2022
+* Music Department Faculty Commendation — April 2022
+* Dean's List — All Semesters 2019-2022
+* Albion College Fellows — Spring 2022
 * Eagle Scout Rank — April 2019
 * Presidential Scholarship, Albion College — February 2019
 * Perfect Score on Computer Science AP Exam — May 2018
