@@ -16,8 +16,8 @@ function printDiv({divId, title}) {
     mywindow.document.write(document.getElementById(divId).innerHTML);
     mywindow.document.write('</body></html>');
 
-    mywindow.document.close(); // necessary for IE >= 10
-    mywindow.focus(); // necessary for IE >= 10*/
+    mywindow.document.close();
+    mywindow.focus();
 
     mywindow.print();
     mywindow.close();
@@ -27,13 +27,4 @@ function printDiv({divId, title}) {
 
 $('#cmd').click(function () {
     printDiv({divId: 'content', title: 'noahkeck'});
-    /*doc.html(document.getElementById('content'), {
-        callback: function (doc) {
-            doc.save('noahkeck.pdf');
-          },
-        html2canvas: {
-            scale: 0.22
-        },
-        margin: [15, 15, 15, 15]
-    });*/
 });
