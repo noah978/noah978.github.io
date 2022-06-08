@@ -54,9 +54,9 @@ Developed a variety of applications and automation tools using a combination of 
 ## Technical Experience
 
 Open Source
-:   Worked closely with the [AltStore project], a project that aims to provide an alternative App Store solution on iOS. Helped with API design, documentation, and implementation. Developed the Python application [AltSourceParser] to improve the onboarding process for third party developers.
+:   -- Worked closely with the [AltStore project], a project that aims to provide an alternative App Store solution on iOS. Helped with API design and documentation. Developed the Python application [AltSourceParser].
 
-:   Created the [CheatBase project], a repository surrounding the collection, classification, and storage of cheat codes written for retro games. Wrote Python scripts to convert the Sqlite OpenVGDB database for use in the CheatBase project and for project maintenance.
+:   -- Created the [CheatBase project], a repository for properly storing and categorizing cheat codes written for retro games. Wrote Python scripts to convert the Sqlite OpenVGDB database for use in the CheatBase project and for project maintenance.
 
 Programming Languages
 :   **Java:** Various independent projects, including Minesweeper and a Sudoku Puzzle Generator, with both the algorithm and GUI to play.
