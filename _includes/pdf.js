@@ -7,7 +7,7 @@ var specialElementHandlers = {
     }
 };
 
-export default function printDiv({divId, title}) {
+function printDiv({divId, title}) {
     let mywindow = window.open('', 'PRINT', 'height=650,width=900,top=100,left=150');
 
     mywindow.document.write(`<html><head><title>${title}</title><style>`);
