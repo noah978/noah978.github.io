@@ -40,12 +40,7 @@ August 2015 — June 2019
 
 **CIO of Building the Bridges Community Services** ◆ June 2021 — Present
 
-As the founding CIO of the organization, set up the internal IT infrastructure and solely developed their website, [https://btbcs.org](https://btbcs.org). Worked heavily with a variety of common web technologies throughout this process, some of which include:
-
-* Google Workspace
-* Docker
-* PHP, HTML, JS, CSS
-* Ruby
+As the founding CIO of the organization, set up the internal IT infrastructure and solely developed their website, [https://btbcs.org](https://btbcs.org). Worked heavily with a variety of common web technologies throughout this process, some of which include: Google Workspace, Docker, PHP, HTML, JS, CSS, and Ruby.
 
 **Student Programmer at Albion College** ◆ September 2019 — April 2022
 
@@ -78,6 +73,7 @@ Programming Languages
 ## Research and Development
 
 Albion College Prentiss M. Brown Honors Thesis — April 2022
+
 :   **Algorithmic Solving and Generation of Three-Dimensional Sudoku Puzzles**
 
 ## Leadership and Extracurricular
