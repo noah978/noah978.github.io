@@ -1,12 +1,3 @@
-window.jsPDF = window.jspdf.jsPDF;
-
-var doc = new jsPDF();
-var specialElementHandlers = {
-    '#editor': function (element, renderer) {
-        return true;
-    }
-};
-
 function printDiv({divId, title}) {
     let mywindow = window.open('', 'PRINT', 'height=650,width=900,top=100,left=150');
 
