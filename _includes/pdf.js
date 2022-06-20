@@ -3,9 +3,9 @@ function printDiv({divId, title}) {
 
     mywindow.document.write(`<html><head><title>${title}</title><style>`);
     mywindow.document.write(document.getElementsByTagName('style')[0].innerHTML);
-    mywindow.document.write('</style></head><body >');
+    mywindow.document.write(`</style></head><body><div class='printing' >`);
     mywindow.document.write(document.getElementById(divId).innerHTML);
-    mywindow.document.write('</body></html>');
+    mywindow.document.write('</div></body></html>');
 
     mywindow.document.close();
     mywindow.focus();
