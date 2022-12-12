@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://noahkeck.dev/feed.xml" rel="self" type="application/atom+xml" /><link href="https://noahkeck.dev/" rel="alternate" type="text/html" /><updated>2022-12-12T21:56:36+00:00</updated><id>https://noahkeck.dev/feed.xml</id><title type="html">Noah Keck</title><subtitle>Home Page</subtitle><entry><title type="html">CheatBase</title><link href="https://noahkeck.dev/project/2022/06/24/cheatbase/" rel="alternate" type="text/html" title="CheatBase" /><published>2022-06-24T17:03:00+00:00</published><updated>2022-06-24T17:03:00+00:00</updated><id>https://noahkeck.dev/project/2022/06/24/cheatbase</id><content type="html" xml:base="https://noahkeck.dev/project/2022/06/24/cheatbase/">&lt;h1 id=&quot;a-retro-game-cheaters-database&quot;&gt;A Retro Game Cheater’s Database&lt;/h1&gt;
+
+&lt;p&gt;This Database has been designed with the purpose of being used primarily with emulators to automatically find cheat codes related to a game. It can also be theoretically used by anyone to find the cheat codes for any particular game if they have basic knowledge of SQL.&lt;/p&gt;
+
+&lt;p&gt;Using a series of Python database tools, I have an easy way to import and export .csv files containing correlated data into an SQL database. I also wrote the tools to be capable of re-organizing the entire database, while still maintaining the relational data. That is, it can alter the primary keys of each table and automatically update the foreign keys.&lt;/p&gt;
+
+&lt;p&gt;Currently my goal for this database is to be included in a future release of Riley Testut’s &lt;a href=&quot;https://deltaemulator.com&quot;&gt;Delta Emulator&lt;/a&gt; to allow users to simply search for cheats in app instead of needing to search for them online.&lt;/p&gt;
+
+&lt;p&gt;Here is a link to the &lt;a href=&quot;https://github.com/CheatBase&quot;&gt;CheatBase GitHub organization&lt;/a&gt; that I created for the new cheat code database.&lt;/p&gt;
+
+&lt;p&gt;By no means is this a complete database, if you are interested in contributing or reporting a code that doesn’t work, please open an issue / pull request on the GitHub repo or contact me directly. At the time of writing, there are roughly 10,000 Nintendo DS cheat codes included, with my current work to include roughly 400,000 more.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-relational-design&quot;&gt;The Relational Design&lt;/h2&gt;
+
+&lt;p&gt;It uses the &lt;a href=&quot;https://github.com/OpenVGDB/OpenVGDB/releases/&quot;&gt;OpenVGDB database&lt;/a&gt; as its core for ROM hashes and game releases. This makes the database a must have for any emulator as it can get you cover art, various metadata, and now cheat codes for a plethora of games and consoles.&lt;/p&gt;
+
+&lt;table class=&quot;bordered-table&quot; style=&quot;margin: 1.5rem;&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Table Name&lt;/th&gt;
+      &lt;th&gt;Table Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ROMS&lt;/td&gt;
+      &lt;td&gt;The (mostly) complete list of ROMs for every supported system and its technical details.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;RELEASES&lt;/td&gt;
+      &lt;td&gt;The release info related to a single ROM including cover image, region, and developer data.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;REGIONS&lt;/td&gt;
+      &lt;td&gt;A list of every release region which can include a single or multiple countries.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SYSTEMS&lt;/td&gt;
+      &lt;td&gt;A list of the supported consoles and handhelds and their technical details.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CHEATS&lt;/td&gt;
+      &lt;td&gt;The list of cheat codes, their related data, and their usage.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CHEAT_DEVICES&lt;/td&gt;
+      &lt;td&gt;The list of various devices that cheat codes were written for.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;CHEAT_CATEGORIES&lt;/td&gt;
+      &lt;td&gt;A working list of the types of functions that cheat codes implement.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Using the ROMS table, the intended ROM cam be found either through the name of the game or using hashes of the file. Then with the correct romID acquired, it can be used to find the corresponding releases (which contain cover art and other useful metadata) as well as any cheat codes.&lt;/p&gt;
+
+&lt;p&gt;To learn more about the database, check out the &lt;a href=&quot;https://github.com/CheatBase/CheatBase/blob/master/README.md&quot;&gt;README&lt;/a&gt; and the &lt;a href=&quot;https://github.com/CheatBase/CheatBase/blob/master/CONTRIBUTING.md&quot;&gt;Contributors Guide.&lt;/a&gt;&lt;/p&gt;</content><author><name>noah</name></author><category term="project" /><category term="sql" /><category term="python" /><category term="cheatcodes" /><category term="retrogames" /><summary type="html">A Retro Game Cheater’s Database</summary></entry><entry><title type="html">Three-Dimensional Sudoku Thesis</title><link href="https://noahkeck.dev/blog/2022/05/24/three-dimensional-sudoku-thesis/" rel="alternate" type="text/html" title="Three-Dimensional Sudoku Thesis" /><published>2022-05-24T16:02:00+00:00</published><updated>2022-05-24T16:02:00+00:00</updated><id>https://noahkeck.dev/blog/2022/05/24/three-dimensional-sudoku-thesis</id><content type="html" xml:base="https://noahkeck.dev/blog/2022/05/24/three-dimensional-sudoku-thesis/">&lt;p&gt;After a very busy spring semester, filled with Esports competitions, band concerts, and a senior thesis. I’m happy to finally have some time to write another blog post, this one offering up a quick look at my completed senior thesis.&lt;/p&gt;
+
+&lt;h1 id=&quot;albion-college-prentiss-m-brown-honors-thesis&quot;&gt;Albion College Prentiss M. Brown Honors Thesis&lt;/h1&gt;
+
+&lt;p&gt;As part of the requirement to graduate from Albion College with Honors, I had to attend four semester-length classes on varying subjects and draft a written thesis on a subject of my choosing.&lt;/p&gt;
+
+&lt;p&gt;I have adored puzzles and games for as long as I can remember. Whether it was building enormous LEGO® sets, solving extreme dot-to-dot puzzle books, or just playing strategy games, I always had a puzzle to solve. This is largely where I find my love for computer science too!&lt;/p&gt;
+
+&lt;p&gt;So naturally, Sudoku puzzles are of great interest to me. Back when I was still a high school student, I wrote a &lt;a href=&quot;/project/2018/03/19/sudoku-generator/&quot;&gt;Sudoku generator application&lt;/a&gt; that allowed users to generate and the solve the puzzle all in the application. An endless supply of fresh Sudoku for the puzzle lover.&lt;/p&gt;
+
+&lt;p&gt;However, Sudoku generators have been around since the very same time that the puzzle rose to sudden popularity. (In fact, the person who is largely responsible for their popularity, Wayne Gould, wrote a Sudoku generator himself.)&lt;/p&gt;
+
+&lt;p&gt;So for my project, I wanted to create something more complex that has never really had much time in the light. And this was how I got to my project idea: Sudoku puzzle generation in the third dimension.&lt;/p&gt;
+
+&lt;h1 id=&quot;sudoku-variations&quot;&gt;Sudoku Variations&lt;/h1&gt;
+
+&lt;p&gt;The first thing that’s highly important to understand is that there are a great many variations for three-dimensional Sudoku puzzles and there is not a single “standard” puzzle format.&lt;/p&gt;
+
+&lt;p&gt;Here’s just a few of the varieties I found while exploring the subject:&lt;/p&gt;
+
+&lt;h3 id=&quot;isodoku&quot;&gt;IsoDoku&lt;/h3&gt;
+
+&lt;p&gt;Easily recognizable by their isometric design. They are not really designed to by playable in the third dimension, they are merely projections onto the third dimension.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/isodoku_puzzle.png&quot; alt=&quot;IsoDoku Example&quot; style=&quot;max-width: 400px; height: auto; width: 90%&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;cubic-sudoku&quot;&gt;Cubic Sudoku&lt;/h3&gt;
+
+&lt;p&gt;A true three-dimensional puzzle&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, these Sudoku puzzles are typically presented with their cubes flattened and the planes stretched vertically or horizontally.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/cubic_sudoku.png&quot; alt=&quot;Cubic Sudoku Example&quot; style=&quot;max-width: 200px; height: auto; width: 90%&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;other-variants&quot;&gt;Other Variants&lt;/h3&gt;
+
+&lt;p&gt;These are also sometimes considered SudokuKubes or Sudoku Cubes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/sudoku_cube4.png&quot; alt=&quot;Example of another three-dimensional Sudoku puzzle&quot; style=&quot;max-width: 300px; height: auto; width: 90%&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;the-algorithms-behind-three-dimensional-sudoku&quot;&gt;The Algorithms Behind Three-Dimensional Sudoku&lt;/h1&gt;
+
+&lt;p&gt;The generation of most types of Sudoku, including three-dimensional, is best approached in a two-step method:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;First, a valid Sudoku solution is produced with all Sudoku rules being fulfilled and met.&lt;/li&gt;
+  &lt;li&gt;Then, individual clues&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; are removed from the solution until the desired quantity of clues are left. All while ensuring that there is only ever one valid solution to the puzzle.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are a few different approaches to the actual algorithms covered in the actual thesis, but the ultimately best one to generate a valid Sudoku solution is shown below:&lt;/p&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Sudoku3D&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GenSudokuSolution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Sudoku3D&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;puzzle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;puzzle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GenSudokuSolution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;puzzle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GenSudokuSolution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;puzzle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;neighbors&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;puzzle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetNeighbors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;List&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Enumerable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ToList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;();&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;foreach&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;neighbors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Remove&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Count&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// select a random number from the options, remove it, and then test it&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;randgen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;testNum&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;RemoveAt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;puzzle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;testNum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// check to see if a solution was found, else try another number in the spot&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GenSudokuSolution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;puzzle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;temp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// solution found&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;puzzle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// reset spot, no valid solution on this branch&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This iterates through the matrix cell by cell, picking a random number from the available numbers that are possible without breaking constraints. Then it moves forward to the next cell. In the case that a cell has no possible numbers, it backtracks to the previous cell and picks a different number.&lt;/p&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Sudoku3D&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GenSudokuPuzzle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;bool&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newSolution&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solution&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newSolution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;solution&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GenSudokuSolution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;Sudoku3D&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tempPuzzle&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Clone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clueCount&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Pow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clueCount&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clues&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// continue to randomly pick indices until a spot is chosen&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;randgen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;randgen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;randgen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Next&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tempPuzzle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;tempPuzzle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// now check to see if puzzle still has only one solution&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(!&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tempPuzzle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;IsValidPuzzle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;tempPuzzle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;continue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;clueCount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;--;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tempPuzzle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This method will remove the value of cells one by one until the desired number of clues is reached by picking a random index to remove the value of. Then the puzzle is tested and if it has only one unique solution, it is still considered valid and proceeds to find the next index to remove.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h1&gt;
+
+&lt;p&gt;Here is one of the many Sudoku puzzles my algorithm generated:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Sudoku3D-Size-4-Hard.png&quot; alt=&quot;Sudoku3D Example Puzzle&quot; style=&quot;max-width: 400px; height: auto; width: 90%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Feel free to download the image and try and solve it yourself! This one was generated on the “Hard” setting, but because its only a 4 x 4 x 4 puzzle, it shouldn’t be too difficult.&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Check out the open-sourced code that I developed for this project as well. You can find the repositories on &lt;a href=&quot;https://github.com/noah978&quot;&gt;my GitHub page.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;There are hard copies available at the Albion College Library and Honors building, you can also &lt;a href=&quot;https://drive.google.com/file/d/1DbSuBr97HKLlPYB4Cu-uLQRkn02THJmO/view?usp=sharing&quot;&gt;view the online copy here.&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;By “true three-dimensional”, it can be thought of as the puzzle could be constructed and just as easily solved in the third dimension as opposed to be designed for solving in the second dimension. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Clues are the valid numbers left remaining in a Sudoku puzzle. They are called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;clues&lt;/code&gt; because they are the hints that allow players to logically solve the puzzle. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;This puzzle will only have 64 total cells to fill as opposed to the normal 81 cells in a standard Sudoku puzzle. This reduces that number of constraints in a given puzzle and is expected to make it easier and quicker to solve. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>noah</name></author><category term="blog" /><category term="c-sharp" /><category term="sudoku" /><summary type="html">After a very busy spring semester, filled with Esports competitions, band concerts, and a senior thesis. I’m happy to finally have some time to write another blog post, this one offering up a quick look at my completed senior thesis.</summary></entry><entry><title type="html">BTBCS Development</title><link href="https://noahkeck.dev/blog/2021/09/15/btbcs-development/" rel="alternate" type="text/html" title="BTBCS Development" /><published>2021-09-15T15:57:00+00:00</published><updated>2021-09-15T15:57:00+00:00</updated><id>https://noahkeck.dev/blog/2021/09/15/btbcs-development</id><content type="html" xml:base="https://noahkeck.dev/blog/2021/09/15/btbcs-development/">&lt;h1 id=&quot;a-busy-summer&quot;&gt;A Busy Summer&lt;/h1&gt;
+
+&lt;p&gt;Over the course of this past summer, I spent the majority of my time working at the founding CIO (Chief Information Officer) of a new Social Services organization called “Building the Bridges Community Services”. Our website is located at &lt;a href=&quot;https://btbcs.org&quot;&gt;btbcs.org&lt;/a&gt; and is available worldwide using &lt;a href=&quot;https://dreamhost.com&quot;&gt;Dreamhost&lt;/a&gt; as the backend and &lt;a href=&quot;https://cloudflare.com&quot;&gt;Cloudflare&lt;/a&gt; as the CDN (Content Delivery Network).&lt;/p&gt;
+
+&lt;p&gt;Over the course of the summer, I built the entire website from the ground up using Bootstrap 4 CSS/JS framework, my own PHP shell to manage header and footer items, and a variety of PHP and JS functions to perform various aspects of the website like PHPMailer and form submissions via AJAX requests. More on all these later.&lt;/p&gt;
+
+&lt;p&gt;Of course, developing a massive website with so many intertwining web technologies, it became obvious that I had no way to easily test the site on my Windows OS. Which is why I also learned how to use &lt;a href=&quot;https://docker.com&quot;&gt;Docker&lt;/a&gt; this summer. With Docker, I could create a test environment that is nearly identical to my actual production environment on a shared Dreamhost server. The process was quite complex at first, but has become incredibly essential to my development workflow. In the future, I would like to be able to use Kubernetes or similar tools to simplify the transition from the development environment to production.&lt;/p&gt;
+
+&lt;p&gt;Aside from the website development, I also got the chance to setup a Google Workspace as the primary administrator. It was a very worthwhile experience getting to see all the backend tools and settings that Google supplies to their customers.&lt;/p&gt;
+
+&lt;h2 id=&quot;general-state-of-web-development&quot;&gt;General State of Web Development&lt;/h2&gt;
+
+&lt;p&gt;From my experiences this past summer, the state of web development is rather crazy. There are approximately millions of different ways to go about designing and building a website. There are almost a dozen different programming languages alone which can be used in web design (PHP, Ruby, JavaScript, etc). To be honest, you can usually use just about any language you want as the backend so long as the server’s OS can support it.&lt;/p&gt;
+
+&lt;p&gt;For my this website, I started with the basics. I refrained from using any language out side of HTML, CSS, and JS. I will readily say that working with Bootstrap CSS was a &lt;strong&gt;wonderful&lt;/strong&gt; time. They have created an outstanding set of CSS helper functions and classes that made my amateur design abilities look visually pleasing. I look forward to seeing what improvements the community has made to Bootstrap with the v5 update.&lt;/p&gt;
+
+&lt;p&gt;As nice and simple as trying to make a static website was, I quickly realized it was not feasible to create the functionality I needed without a backend server-side language. Enter PHP on to the scene. I have long expressed my displeasure with PHP overall, but I knew it was the most common and widely used server language.&lt;/p&gt;
+
+&lt;p&gt;PHP was useful for a variety tasks on my website: submitting / handling forms, sending emails, and adding the header and footer to each page. Looking back however, I wish I had taken the time to learn something other than PHP like Ruby or NodeJS.&lt;/p&gt;
+
+&lt;p&gt;I finally reached the point where the last big feature to implement on the website was blog. To do this properly, I needed the ability to archive posts and make a continually growing list of posts look nice. Most websites use WordPress to handle this, but I refused to use WordPress in order to keep the site source code function as independently as possible. The solution I came up with was perhaps a little odd.&lt;/p&gt;
+
+&lt;p&gt;I used something known as Jekyll. This very website you are reading from right now was also generated by Jekyll. All Jekyll does is take websites with dynamic content such as a changing number of blog posts and generates a set of static HTML webpages from it. What made my use case really strange was that I was creating PHP files instead of HTML, something that Jekyll was never intended to do. With a little bit of tweaking to Jekyll’s source code (something they actually encourage!), I was able to make Jekyll meet my needs perfectly.&lt;/p&gt;
+
+&lt;p&gt;In the future, I’d be much more interested in using tools like Ruby and Jekyll to generate the website from the very start. The idea of serving only static HTML files is very appealing, not to mention they support SASS too which will make the source code for my CSS much cleaner. Then whenever a dynamic capability like form submissions is needed, there is still a backend scripting language ready to go.&lt;/p&gt;
+
+&lt;h2 id=&quot;neat-tips-and-tricks&quot;&gt;Neat Tips and Tricks&lt;/h2&gt;
+
+&lt;h3 id=&quot;cdn-failsafe&quot;&gt;CDN Failsafe&lt;/h3&gt;
+
+&lt;p&gt;Since I was working with so many mainstream web libraries like Bootstrap and JQuery, it only made sense to use the CDN versions for potentially faster load times. However, that means if those serves go down due to a DDoS attack or widespread system failure, my website would lose most functionality and appearance.&lt;/p&gt;
+
+&lt;p&gt;Thus, I wrote some neat JavaScript failsafe scripts that would switch the site to copies of the libraries that are stored on the primary server instead:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;jQuery&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;undefined&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;unescape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;%3Cscript src=&quot;/resources/jquery-3.6.0/jquery-3.6.0.min.js&quot;%3E%3C/script%3E&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This checks for the existence of an object called window.jQuery and in the case which it is undefined (meaning the CDN failed to load), it writes a script to load from the local version instead.&lt;/p&gt;
+
+&lt;h3 id=&quot;forcing-jekyll-to-output-php-files&quot;&gt;Forcing Jekyll to Output PHP files&lt;/h3&gt;
+
+&lt;p&gt;I was really trying to create a much more elegant solution to this, but I ended up having to do a quick and dirty method of just forcing it to use a “custom” extension when writing the files. So I could specify the desired custom extension in the file that was being converted. It failed to change the inner working of Jekyll so I then had to workaround the fact that Jekyll still thought the file extension was HTML when referencing it.&lt;/p&gt;
+
+&lt;p&gt;The following is a snippet of a custom plugin I wrote to override the destination function with the desired custom extension.&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Jekyll&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Document&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;destination&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;base_directory&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;dest&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;in_dest_dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;base_directory&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;in_dest_dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;unescape_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;end_with?&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;/&quot;&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;index.html&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output_ext&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;unless&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;end_with?&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output_ext&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+      &lt;span class=&quot;c1&quot;&gt;# replace extension with custom_ext&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sub!&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;output_ext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'custom_ext'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'custom_ext'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+      &lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The failures here are not really a major issue with Jekyll, and theoretically there is a way for a Jekyll package to fully enable custom extensions in the way that I wanted. Perhaps this may be a project for the future.&lt;/p&gt;
+
+&lt;h3 id=&quot;ajax-form-requests&quot;&gt;AJAX Form Requests&lt;/h3&gt;
+
+&lt;p&gt;One of biggest ways to make a form look nice on a website is to have smart input validation and form feedback. Using AJAX to intercept the form submissions, I was able to add things like an upload percentage bar and a visually appealing success response.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;submit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;preventDefault&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;form_data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;FormData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;form_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;#inputFile&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ajax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;xhr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xhr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;XMLHttpRequest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fadeIn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;xhr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;upload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;progress&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;evt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;evt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;lengthComputable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;percentComplete&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;evt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loaded&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;evt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;total&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;percentComplete&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;parseInt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;percentComplete&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;css&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;percentComplete&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;percentComplete&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xhr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;form&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;form_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;contentType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;processData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;success&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;done_func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fail_func&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;dropdown-navbar-on-hover&quot;&gt;Dropdown Navbar on Hover&lt;/h3&gt;
+
+&lt;p&gt;One of the more hidden features that few people notice is the ability for dropdown bars to activate on hover rather than Bootstrap’s default design which requires you to tap them. This feature also only applies to desktop devices because with a touch screen, the hover concept is ruined. I accomplished this feature using a custom JavaScript event listener:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;load resize&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;matchMedia&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;(min-width: 992px)&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;matches&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// only apply to desktop devices&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;$dropdown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hover&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hasClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// prevent it from toggling OFF when mouse arrives&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$dropdownToggle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dropdown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;toggle&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+      &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// mouse leaves area&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hasClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// prevent it from toggling ON when mouse leaves&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$dropdownToggle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dropdown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;toggle&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;$dropdown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;off&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;mouseenter mouseleave&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This used the default Bootstrap JavaScript functions for activating dropdowns. Which was essential because I also added a smooth sliding transition that works on both desktop and mobile:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;$dropdown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;show.bs.dropdown&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$dropdownMenu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;stop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;slideDown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// Add slideUp animation to Bootstrap dropdown when collapsing.&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;$dropdown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;hide.bs.dropdown&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$dropdownMenu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;first&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;stop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;delay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;slideUp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Take careful note of the delay(50) because without the short pause, the animations can get stuck in a loop of frantic opening and closing.&lt;/p&gt;
+
+&lt;h2 id=&quot;docker---incredibly-powerful-tech&quot;&gt;Docker - Incredibly Powerful Tech&lt;/h2&gt;
+
+&lt;p&gt;The most useful piece of tech that I used over the course of this entire project was undoubtedly Docker. This incredibly simplified the process of creating and manipulating VMs as containers and made a fully operational Apache web server run locally on my desktop while allowing my web browsers to connect to the “website” via a localhost port.&lt;/p&gt;
+
+&lt;p&gt;The technology is most definitely an underused piece of software for all web development as one of the most annoying and difficult problems of development as an industry, is how to transition from development to production when the two OS environments can be vastly different. I expect to use a lot more Docker in my future projects.&lt;/p&gt;
+
+&lt;h1 id=&quot;wrap-up&quot;&gt;Wrap-Up&lt;/h1&gt;
+
+&lt;p&gt;While I didn’t spend the summer as an intern at a software company, I certainly didn’t waste too much time. Taking a list of requests and features for a website and turning them into a reality was a very rewarding experience and I hope to be able to take on more big projects in the future.&lt;/p&gt;</content><author><name>noah</name></author><category term="blog" /><category term="bootstrap" /><category term="web-development" /><category term="php" /><category term="docker" /><category term="btbcs" /><summary type="html">A Busy Summer</summary></entry><entry><title type="html">The Creation of AltStore Docs and Delta Docs</title><link href="https://noahkeck.dev/blog/2020/05/21/altstore-and-delta-docs/" rel="alternate" type="text/html" title="The Creation of AltStore Docs and Delta Docs" /><published>2020-05-21T01:08:00+00:00</published><updated>2020-05-21T01:08:00+00:00</updated><id>https://noahkeck.dev/blog/2020/05/21/altstore-and-delta-docs</id><content type="html" xml:base="https://noahkeck.dev/blog/2020/05/21/altstore-and-delta-docs/">&lt;p&gt;I love retro games and I have enjoyed Apple’s iOS devices for a great many years. And at the collision of these two great passions: &lt;a href=&quot;https://deltaemulator.com&quot;&gt;Delta Emulator.&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;but-alas-apple-refuses&quot;&gt;But Alas, Apple Refuses&lt;/h2&gt;
+
+&lt;p&gt;Unfortunately for me and the rest of the Retro gaming community, Apple refuses to allow any&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; emulator on their official App Store. Their reasoning? Well it violates their guidelines of course! Apple says that emulators violate guideline 2.5.2, which prohibits apps from installing or running external code on iOS.&lt;/p&gt;
+
+&lt;p&gt;In reality, it comes down to two big reasons for them:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Execution of arbitrary code (i.e. ROMs), is a security risk since the App Store review team cannot check the imported code for malicious functionality.&lt;/li&gt;
+  &lt;li&gt;The app could allow / enable the retrieval of copyrighted content, posing a lawsuit risk to Apple.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;and-so-this-is-where-altstore-comes-in&quot;&gt;And so this is where AltStore comes in.&lt;/h4&gt;
+
+&lt;p&gt;AltStore allows non-developers to “trick” Apple into thinking that they built their own application and are installing it to their device for testing purposes. It essentially copies the build process from XCode and makes any IPA a seamless installation.&lt;/p&gt;
+
+&lt;p&gt;I’ve been heavily involved with both the development and testing of AltStore and Delta with Riley Testut as the lead developer. The entire project is open-sourced so anyone can contribute!&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rileytestut/altstore&quot;&gt;AltStore GitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rileytestut/delta&quot;&gt;Delta GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The markdown documentation that I’ve written exists so that developers of AltStore Sources or Delta Custom Skins have an in-depth document that explains what values are expected for their json config files.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-docs&quot;&gt;The Docs&lt;/h1&gt;
+
+&lt;p&gt;You can find the two different sites that document Riley Testut’s AltStore and Delta below:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://noah978.gitbook.io/altstore-docs&quot;&gt;AltStore Docs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://noah978.gitbook.io/delta-docs&quot;&gt;Delta Docs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Both of these wiki-style documents are open-source and hosted on GitHub. They can be viewed using GitBook or GitHub pages, but personally I much prefer the GitBook view.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Except sometimes they get to exist for years, but are &lt;a href=&quot;https://9to5mac.com/2021/07/22/idos-2-emulator-for-ios-to-be-removed-from-the-app-store/&quot;&gt;then randomly removed.&lt;/a&gt; Sorry bout that one, iDOS. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>noah</name></author><category term="blog" /><category term="ios" /><category term="altstore" /><category term="delta" /><category term="documentation" /><summary type="html">I love retro games and I have enjoyed Apple’s iOS devices for a great many years. And at the collision of these two great passions: Delta Emulator.</summary></entry><entry><title type="html">A Shortcut to Create Shortcuts</title><link href="https://noahkeck.dev/blog/2019/01/09/a-shortcut-to-create-shortcuts/" rel="alternate" type="text/html" title="A Shortcut to Create Shortcuts" /><published>2019-01-09T11:27:00+00:00</published><updated>2019-01-09T11:27:00+00:00</updated><id>https://noahkeck.dev/blog/2019/01/09/a-shortcut-to-create-shortcuts</id><content type="html" xml:base="https://noahkeck.dev/blog/2019/01/09/a-shortcut-to-create-shortcuts/">&lt;p&gt;Siri Shortcuts were introduced with iOS 12 and is considered one of the most impressive improvements to Siri ever. Apple realized that meeting every possible need or request in Siri was nearly impossible. But if they gave users the ability to create any set of chained commands to fulfill their request, they could &lt;em&gt;vastly&lt;/em&gt; improve Siri’s capabilities.&lt;/p&gt;
+
+&lt;p&gt;Given the capabilities of the Siri Shortcuts app, I created a shortcut to help with my favorite emulators: &lt;a href=&quot;https://gba4iosapp.com&quot;&gt;GBA4iOS&lt;/a&gt; and the more recent and capable &lt;a href=&quot;https://deltaemulator.com&quot;&gt;Delta.&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;introducing&quot;&gt;Introducing,&lt;/h3&gt;
+
+&lt;h1 id=&quot;my-ios-emulator-home-screen-shortcut-creator&quot;&gt;My iOS Emulator Home Screen Shortcut Creator&lt;/h1&gt;
+
+&lt;p&gt;Using this shortcut, you can create a Home Screen Icon using any image you want, that when clicked will directly open into any game in your rom library. All you need to do is have an image and the exact name of your game (or in Delta’s case, the deep link) as it appears in your library.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-does-this-work&quot;&gt;How Does This Work?&lt;/h2&gt;
+
+&lt;p&gt;Back when GBA4iOS was being developed, the developer Riley Testut implemented a feature that allowed a URL scheme to open games in GBA4iOS. This same feature is also present in Delta. A URL scheme looks like the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gba4ios://Pokemon%20Emerald&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;~ or ~&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;delta://game/989bcb79c779cv97&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;In the case of GBA4iOS, when you input the name of your game, the home screen shortcut creator then runs another separate shortcut which will convert regular text into a URL compatible text. So anytime you use the shortcut it’s actually the same as typing the URL scheme into safari!&lt;/p&gt;
+
+&lt;p&gt;Delta’s shortcut is even simpler since the deep link doesn’t have any characters that need to be converted to URL compatible text.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-use&quot;&gt;How To Use&lt;/h2&gt;
+
+&lt;p&gt;To use the GBA4iOS shortcut you will need to add both of the following shortcuts to your Siri Shortcut library. This can be done by simply clicking the links on your device.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.icloud.com/shortcuts/eab5089ca3fd4faaa910b79eed6735f3&quot;&gt;GBA4iOS Shortcuts&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.icloud.com/shortcuts/63d051ede25c4d63b3dd31f9f4422039&quot;&gt;Convert Text to URL&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Just click the “GBA4iOS Shortcuts” (which is now in your siri shortcuts library) and it will guide you along the process. I would recommend copying and pasting the name of your game to ensure that it is exact.&lt;/p&gt;
+
+&lt;p&gt;For Delta, you only need to add the following shortcut to your siri shortcut library:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.icloud.com/shortcuts/b5207b88f7464381aa4d487878496259&quot;&gt;Delta Shortcuts&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;credits&quot;&gt;Credits&lt;/h2&gt;
+
+&lt;p&gt;Thank you to Riley Testut for creating GBA4iOS and Delta! And for including URL Scheme support in both!&lt;/p&gt;
+
+&lt;p&gt;Thank you to Federico Viticci for creating the &lt;a href=&quot;https://www.macstories.net/ios/home-screen-icon-creator-a-shortcut-to-create-custom-icons-for-apps-contacts-solid-colors-and-more/&quot;&gt;Home Screen Icon Creator&lt;/a&gt; shortcut, which I modified to create the GBA4iOS Shortcut creator.&lt;/p&gt;</content><author><name>noah</name></author><category term="blog" /><category term="ios" /><category term="siri" /><category term="gba4ios" /><category term="delta" /><summary type="html">Siri Shortcuts were introduced with iOS 12 and is considered one of the most impressive improvements to Siri ever. Apple realized that meeting every possible need or request in Siri was nearly impossible. But if they gave users the ability to create any set of chained commands to fulfill their request, they could vastly improve Siri’s capabilities.</summary></entry><entry><title type="html">The Struggle to Find Cheats</title><link href="https://noahkeck.dev/blog/2019/01/09/the-struggle-to-find-cheats/" rel="alternate" type="text/html" title="The Struggle to Find Cheats" /><published>2019-01-09T11:27:00+00:00</published><updated>2019-01-09T11:27:00+00:00</updated><id>https://noahkeck.dev/blog/2019/01/09/the-struggle-to-find-cheats</id><content type="html" xml:base="https://noahkeck.dev/blog/2019/01/09/the-struggle-to-find-cheats/">&lt;h2 id=&quot;first-a-little-backstory&quot;&gt;First, A Little Backstory&lt;/h2&gt;
+
+&lt;p&gt;During High School, I have thoroughly enjoyed playing old Nintendo games. My very first gaming electronic was a GameBoy, closely followed by a LeapFrog, and I have always and probably always will love Pokemon Emerald. As I grew older, my family bought Nintendo’s DS and eventually a Wii. But out of every game, I chose Pokemon to spend my time playing. (Although Mario was a close second)&lt;/p&gt;
+
+&lt;p&gt;However, technology grows old and I really couldn’t carry my old GameBoy everywhere I went. That’s where GBA4iOS came in. I clearly remember the first time I discovered the application. I had a simple iPhone 4 back then. The feeling of joy that it brought to me is almost indescribable. No longer did I need to carry a GameBoy anywhere, the phone that have to carry anyways can fully entertain me too.&lt;/p&gt;
+
+&lt;p&gt;I never used any cheats up until the DS and Pokemon PLatinum but once GBA4iOS 2.0 was released, I really wanted to try some. I could finally get to Navel Rock to catch a Lugia or to the Faraway Island for a Mew using a simple cheat code. But I immediately hit a roadblock, it would seem that finding cheat codes are more difficult than I expected.&lt;/p&gt;
+
+&lt;p&gt;In the case Emerald, some cheat codes won’t work based on whether the ROM is of version 1.0 or 1.1. If a game had multiple different games for different localizations, that could prevent the code from working as well.&lt;/p&gt;
+
+&lt;h1 id=&quot;a-cheaters-database&quot;&gt;A Cheater’s Database&lt;/h1&gt;
+
+&lt;p&gt;For all of these reasons, I decided to create a sort of database for all of the cheat codes I could find. It contains GBA codes as of right now, but the goal is for it to contain GBA, GBC, GB, SNES, NES, and N64 as it progresses. Currently, the bulk of my efforts have produced an Excel sheet which contains all the data for the cheat codes I’ve rewritten. Using a series of Python database tools, I have an easy way to import and export .csv files containing correlated data into an SQL database. I also wrote the tools to be capable of re-organizing the entire database, while still maintaining the relational data.&lt;/p&gt;
+
+&lt;p&gt;It uses the &lt;a href=&quot;https://github.com/OpenVGDB/OpenVGDB/releases/&quot;&gt;OpenVGDB database&lt;/a&gt; as its core for ROM hashes and game releases. This makes the database a must have for any emulator as it can get you cover art, various metadata, and now cheat codes for a plethora of games and consoles.&lt;/p&gt;
+
+&lt;p&gt;It’s my goal for this database to be used in Riley Testut’s upcoming Delta Emulator to allow users to simply search for cheats in app instead of needing to search for them online.&lt;/p&gt;
+
+&lt;p&gt;Below is a link to the GitHub organization that I created for the new cheat code database.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/CheatBase&quot;&gt;CheatBase&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;By no means is this a complete database, if you are interested in contributing or reporting a code that doesn’t work, please contact me directly. If progress continues towards a successful database, I will update with another blog post.&lt;/p&gt;</content><author><name>noah</name></author><category term="blog" /><category term="gba4ios" /><category term="delta" /><category term="cheat codes" /><summary type="html">First, A Little Backstory</summary></entry><entry><title type="html">Java Minesweeper</title><link href="https://noahkeck.dev/project/2018/03/19/minesweeper/" rel="alternate" type="text/html" title="Java Minesweeper" /><published>2018-03-19T12:50:00+00:00</published><updated>2018-03-19T12:50:00+00:00</updated><id>https://noahkeck.dev/project/2018/03/19/minesweeper</id><content type="html" xml:base="https://noahkeck.dev/project/2018/03/19/minesweeper/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/noah978/Java-Minesweeper/master/MinesweeperDemo.PNG&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;This is a near-perfect replica of Microsoft’s well known Minesweeper game. Using the same exact image assets, this application runs the game of Minesweeper entirely in Java using the Greenfoot library.&lt;/p&gt;</content><author><name>noah</name></author><category term="project" /><category term="java" /><category term="minesweeper" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://noahkeck.dev/link" /><media:content medium="image" url="https://noahkeck.dev/link" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Java Sudoku Generator</title><link href="https://noahkeck.dev/project/2018/03/19/sudoku-generator/" rel="alternate" type="text/html" title="Java Sudoku Generator" /><published>2018-03-19T11:37:00+00:00</published><updated>2018-03-19T11:37:00+00:00</updated><id>https://noahkeck.dev/project/2018/03/19/sudoku-generator</id><content type="html" xml:base="https://noahkeck.dev/project/2018/03/19/sudoku-generator/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/noah978/Java-Sudoku-Generator/master/SudokuExample.PNG&quot; alt=&quot;Screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The program generates its own sudoku puzzles using a complex, recursive algorithm. So far the algorithm can generate puzzles with about 21 remaining clues or more. The GUI allows you to generate as puzzles over and over, whether or not you fully solved the last one. It allows you to create “possible numbers” to help with sudoku strategies. It will also turn a number red if there is a direct conflict with any of the other existing numbers.&lt;/p&gt;</content><author><name>noah</name></author><category term="project" /><category term="java" /><category term="sudoku" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://noahkeck.dev/link" /><media:content medium="image" url="https://noahkeck.dev/link" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
